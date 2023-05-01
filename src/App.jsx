@@ -1,10 +1,28 @@
 import React from "react";
 
+// Components
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
+import Navbar from "./components/Navbar";
+
+// Packages
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import OptionBar from "./layouts/OptionBar";
+import Footer from "./components/Footer";
+
 const App = () => {
   return (
-    <div className="font-sans">
-      <h1 className="text-3xl font-bold">EduLinker</h1>
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <OptionBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </>
   );
 };
 
