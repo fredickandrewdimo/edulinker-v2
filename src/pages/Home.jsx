@@ -4,7 +4,7 @@ import SearchResults from "../layouts/SearchResults";
 
 const Home = () => {
   return (
-    <div className="font-sans w-11/12 mx-auto py-5">
+    <div className="font-sans w-11/12 mx-auto py-9">
       <SearchResults />
       <DisplayResults />
     </div>

@@ -5,7 +5,7 @@ import { RiArrowDropDownLine, RiArrowUpSLine } from "react-icons/ri";
 
 // Data for filters
 import { year, courses, schools } from "../data/filter";
-import useToggle from "../hooks/useToggle";
+import { useToggle } from "../hooks/useToggle";
 
 const Filter = () => {
   // hook for year toggle
