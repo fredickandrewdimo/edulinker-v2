@@ -14,7 +14,7 @@ const Search = () => {
         {/* search input */}
         <input
           type="text"
-          className="mr-2 p-2 rounded border-none w-64 min-w-100% focus:outline-none"
+          className="mr-2 p-2 rounded border-none w-72 min-w-100% focus:outline-none"
           placeholder="Search a student..."
         />
         {/* search btn */}

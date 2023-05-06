@@ -5,7 +5,7 @@ import Add from "../components/Add";
 
 const OptionBar = () => {
   return (
-    <div className="w-11/12 mx-auto pt-16 pb-5 flex align-items justify-between">
+    <div className="pt-16 pb-5 flex items-center justify-between">
       <Search />
       <div className="flex items-center justify-between">
         <Filter />
