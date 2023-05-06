@@ -1,0 +1,67 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Liam Smith",
+      "birthday": "February 1, 2003",
+      "course": "BS Electrical Engineering",
+      "year": "2nd Year",
+      "school": "University of San Agustin",
+      "status": "Renewed"
+    },
+    {
+      "id": 2,
+      "name": "Ava Johnson",
+      "birthday": "March 1, 2002",
+      "course": "BS Civil Engineering",
+      "year": "3rd Year",
+      "school": "University of San Agustin",
+      "status": "Renewed"
+    },
+    {
+      "id": 3,
+      "name": "Noah Williams",
+      "birthday": "April 1, 2001",
+      "course": "BS Chemical Engineering",
+      "year": "4th Year",
+      "school": "University of San Agustin",
+      "status": "Renewed"
+    },
+    {
+      "id": 4,
+      "name": "Olivia Brown",
+      "birthday": "May 1, 2000",
+      "course": "BS Computer Engineering",
+      "year": "1st Year",
+      "school": "University of San Agustin",
+      "status": "Renewed"
+    },
+    {
+      "id": 5,
+      "name": "William Garcia",
+      "birthday": "June 1, 2002",
+      "course": "BS Mechanical Engineering",
+      "year": "2nd Year",
+      "school": "University of San Agustin",
+      "status": "Renewed"
+    },
+    {
+      "id": 6,
+      "name": "Sophia Martinez",
+      "birthday": "July 1, 2003",
+      "course": "BS Electrical Engineering",
+      "year": "3rd Year",
+      "school": "University of San Agustin",
+      "status": "Renewed"
+    },
+    {
+      "id": 7,
+      "name": "James Davis",
+      "birthday": "August 1, 2000",
+      "course": "BS Computer Engineering",
+      "year": "4th Year",
+      "school": "University of San Agustin",
+      "status": "Renewed"
+    }
+  ]
+}
