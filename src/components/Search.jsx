@@ -3,7 +3,13 @@ import React from "react";
 // React icons
 import { IoSearchOutline } from "react-icons/io5";
 
+// Hooks
+import { useState, useContext } from "react";
+import { MyContext } from "../context/MyProvider";
+
 const Search = () => {
+  const { setQuery } = useContext(MyContext);
+
   return (
     // Search Box container
     <div className="">
@@ -16,6 +22,7 @@ const Search = () => {
           type="text"
           className="mr-2 p-2 rounded border-none w-72 min-w-100% focus:outline-none"
           placeholder="Search a student..."
+          onChange={(e) => setQuery(e.target.value)}
         />
         {/* search btn */}
         <button

@@ -3,18 +3,14 @@ import React, { useState, createContext } from "react";
 export const MyContext = createContext();
 
 const MyProvider = ({ children }) => {
-  const [count, setCount] = useState(0);
+  // global variable for students
+  const [students, setStudents] = useState([]);
 
-  const incrementCount = () => {
-    setCount(count + 1);
-  };
-
-  const decrementCount = () => {
-    setCount(count - 1);
-  };
+  // global variable for search query
+  const [query, setQuery] = useState("");
 
   return (
-    <MyContext.Provider value={{ count, incrementCount, decrementCount }}>
+    <MyContext.Provider value={{ students, setStudents, query, setQuery }}>
       {children}
     </MyContext.Provider>
   );
