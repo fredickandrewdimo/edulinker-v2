@@ -4,7 +4,7 @@ const Add = () => {
   return (
     // Add button
     <div className="">
-      <button className="py-2 px-4 bg-lightSemiBlue rounded text-white font-bold hover:bg-darkSemiBlue">
+      <button className="py-2 px-4 bg-textSecondaryLightColor rounded text-white font-bold hover:bg-textPrimaryLightColor">
         Add Student
       </button>
     </div>

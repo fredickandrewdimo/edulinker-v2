@@ -4,7 +4,7 @@ import { FaSchool } from "react-icons/fa";
 // Hooks
 import { Link } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { MyContext } from "../context/MyProvider";
 
 // Components
@@ -18,10 +18,13 @@ const Card = () => {
   // Custom Fetch
   const [data, error, isLoading] = useFetch("http://localhost:3010/students");
 
+  const [filteredStudents, setFilteredStudents] = useState([]);
+
   useEffect(() => {
     // Check if the data has been fetched successfully
     if (data !== undefined) {
       setStudents(data);
+      setFilteredStudents(data);
     }
   }, [data, setStudents]);
 
@@ -41,7 +44,7 @@ const Card = () => {
           .map((student) => (
             // Card Container
             <Link to={`/students/${student.id}`} key={student.id}>
-              <div className="hover:border-blue-500 border-2 border-white p-4 rounded hover:cursor-pointer text-sm bg-white">
+              <div className="hover:border-textSecondaryLightColor border-2 border-white p-4 rounded hover:cursor-pointer text-sm bg-white">
                 <div className="w-full flex items-center justify-center mb-3 bg-gray-200 p-4 rounded">
                   <FaSchool className="text-9xl text-gray-500" />
                 </div>

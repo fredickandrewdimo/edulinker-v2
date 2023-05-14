@@ -7,9 +7,9 @@ import OptionBar from "../layouts/OptionBar";
 
 const Home = () => {
   return (
-    <div className="font-sans w-11/12 mx-auto">
+    <div className="font-sans w-11/12 mx-auto min-h-screen">
       <OptionBar />
-      <SearchResults />
+      {/* <SearchResults /> */}
       <DisplayResults />
     </div>
   );

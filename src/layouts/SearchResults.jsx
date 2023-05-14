@@ -6,9 +6,9 @@ const SearchResults = () => {
       <div className="flex items-center justify-between pt-8 pb-8">
         {/* Searched word results */}
         <div className="">
-          <p>
+          {/* <p>
             <span className="font-bold">Results for: </span>John Doe
-          </p>
+          </p> */}
         </div>
         {/* View Option Toggle */}
         <ViewOption />

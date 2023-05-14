@@ -26,8 +26,10 @@ const Filter = () => {
       <div className="relative flex flex-col items-center justify-center">
         <button
           onClick={toggleYear}
-          className={`flex items-center py-2 px-6 bg-white rounded mx-2 hover:bg-gray-200 active:bg-gray-200 active:text-blue-500 active:border-2 active:bg-white active:border-blue-500 border-2 border-gray-100 ${
-            isYearOpen ? "border-2 bg-white border-blue-500 text-blue-500" : ""
+          className={`flex items-center py-2 px-6 rounded mx-2 hover:bg-white hover:text-textSecondaryLightColor  bg-white active:white active:text-textPrimaryLightColor active:border-2 active:bg-white active:border-textPrimaryLightColor border-2 border-white${
+            isYearOpen
+              ? "border-2 bg-white border-textPrimaryLightColor text-textPrimaryLightColor"
+              : ""
           }`}
         >
           <p className="mr-2">Year Level</p>
@@ -57,9 +59,9 @@ const Filter = () => {
       <div className="relative flex flex-col items-center justify-center">
         <button
           onClick={toggleCourse}
-          className={`flex items-center py-2 px-6 bg-white rounded mx-2 hover:bg-gray-200 active:bg-gray-200 active:text-blue-500 active:border-2 active:bg-white active:border-blue-500 border-2 border-gray-100 ${
+          className={`flex items-center py-2 px-6 rounded mx-2 hover:bg-white hover:text-textSecondaryLightColor  bg-white active:white active:text-textPrimaryLightColor active:border-2 active:bg-white active:border-textPrimaryLightColor border-2 border-white${
             isCourseOpen
-              ? "border-2 bg-white border-blue-500 text-blue-500"
+              ? "border-2 bg-white border-textPrimaryLightColor text-textPrimaryLightColor"
               : ""
           }`}
         >
@@ -90,9 +92,9 @@ const Filter = () => {
       <div className="relative flex flex-col items-center justify-center">
         <button
           onClick={toggleSchool}
-          className={`flex items-center py-2 px-6 bg-white rounded mx-2 hover:bg-gray-200 active:bg-gray-200 active:text-blue-500 active:border-2 active:bg-white active:border-blue-500 border-2 border-gray-100 ${
+          className={`flex items-center py-2 px-6 rounded mx-2 hover:bg-white hover:text-textSecondaryLightColor  bg-white active:white active:text-textPrimaryLightColor active:border-2 active:bg-white active:border-textPrimaryLightColor border-2 border-white${
             isSchoolOpen
-              ? "border-2 bg-white border-blue-500 text-blue-500"
+              ? "border-2 bg-white border-textPrimaryLightColor text-textPrimaryLightColor"
               : ""
           }`}
         >

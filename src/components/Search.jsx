@@ -13,24 +13,26 @@ const Search = () => {
   return (
     // Search Box container
     <div className="">
-      <form className="p-2 bg-white rounded flex items-center">
+      <form className="py-2 px-2 bg-white rounded flex items-center">
         {/* search icon */}
-        <IoSearchOutline className="text-darkSemiBlue text-lg" />
+        <div className="h-8 w-8 bg-textSecondaryLightColor rounded flex items-center justify-center">
+          <IoSearchOutline className="text-lightColor text-xl" />
+        </div>
 
         {/* search input */}
         <input
           type="text"
-          className="mr-2 p-2 rounded border-none w-72 min-w-100% focus:outline-none"
-          placeholder="Search a student..."
+          className="mr-2 py-2 px-2 rounded border-none w-96 min-w-100% focus:outline-none"
+          placeholder="Search a student name..."
           onChange={(e) => setQuery(e.target.value)}
         />
         {/* search btn */}
-        <button
+        {/* <button
           type="submit"
           className="py-2 px-4  bg-darkSemiBlue hover:bg-lightSemiBlue rounded text-white font-bold"
         >
           Search
-        </button>
+        </button> */}
       </form>
     </div>
   );

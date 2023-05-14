@@ -16,7 +16,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <div className="bg-darkWhite">
+    <div className="bg-lightDarkColor">
       <MyProvider>
         <Router>
           <Navbar />

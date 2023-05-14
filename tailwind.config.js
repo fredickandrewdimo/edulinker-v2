@@ -3,14 +3,25 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      // FONTS
       fontFamily: {
         sans: ["Open Sans", "sans-serif"],
       },
+
+      // COLORS
       colors: {
-        darkSemiBlue: "#202D36",
-        lightSemiBlue: "#2B3743",
-        darkWhite: "#F4F4F4",
-        lightWhite: "#FFFFFF",
+        // LIGHT MODE
+        lightColor: "#FFFFFF",
+        darkLightColor: "#F4F4F4",
+        mostDarkLightColor: "#E5E7EB",
+        textPrimaryLightColor: "#202D36",
+        textSecondaryLightColor: "#374654",
+
+        // DARK
+        lightDarkColor: "#F4F4F4",
+        lightColor: "#FFFFFF",
+        textPrimaryDarkColor: "#FFFFFF",
+        textSecondaryDarkColor: "#D4D4D4",
       },
     },
   },
